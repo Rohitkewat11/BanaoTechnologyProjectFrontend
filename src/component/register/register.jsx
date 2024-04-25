@@ -20,7 +20,7 @@ export function Register() {
       console.log(values);
       if (values.password === values.cnf_password) {
         await axios
-          .post("http://127.0.0.1:5500/addUser", values)
+          .post("https://banaotechnologyprojectbackend.onrender.com/addUser", values)
           .then((res) => {
             alert(res.data);
             formik.values.firstName = "";

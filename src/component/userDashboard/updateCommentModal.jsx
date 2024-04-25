@@ -14,7 +14,7 @@ export function UpdateCommentModal({ ID }) {
 
     onSubmit: (val) => {
       console.log(val);
-      axios.post("http://127.0.0.1:5500/updateComment", val);
+      axios.post("https://banaotechnologyprojectbackend.onrender.com/updateComment", val);
       window.location.reload(true);
     },
   });
@@ -24,7 +24,7 @@ export function UpdateCommentModal({ ID }) {
       ID: ID,
     };
     axios
-      .post("http://127.0.0.1:5500/findComment", commID)
+      .post("https://banaotechnologyprojectbackend.onrender.com/findComment", commID)
       .then((res) => {
         setData(res.data);
       })

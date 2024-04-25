@@ -20,7 +20,7 @@ export function Login() {
 
     onSubmit: async (value) => {
       await axios
-        .post("http://127.0.0.1:5500/userLogin", value)
+        .post("https://banaotechnologyprojectbackend.onrender.com/userLogin", value)
         .then((res) => {
           if (res.data.text === "ok") {
             sessionStorage.setItem("userName", res.data.data.firstName);

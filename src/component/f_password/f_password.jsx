@@ -15,7 +15,7 @@ export function Fpassword() {
 
     onSubmit: async (val) => {
       await axios
-        .post("http://127.0.0.1:5500/F_password", val)
+        .post("https://banaotechnologyprojectbackend.onrender.com/F_password", val)
         .then((res) => {
           if (res.data) {
             alert(res.data);
