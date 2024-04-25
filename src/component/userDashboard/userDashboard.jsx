@@ -26,7 +26,7 @@ export function UserDashboard() {
     },
 
     onSubmit: async (comment) => {
-      axios.post("http://127.0.0.1:5500/addComment", comment);
+      axios.post("https://banaotechnologyprojectbackend.onrender.com/addComment", comment);
       formik.values.comment = "";
     },
   });
@@ -36,7 +36,7 @@ export function UserDashboard() {
     const temp = {
       id: ID,
     };
-    axios.post(`http://127.0.0.1:5500/removeComment`, temp);
+    axios.post(`https://banaotechnologyprojectbackend.onrender.com/removeComment`, temp);
   }
 
   // for update comment//
@@ -50,7 +50,7 @@ export function UserDashboard() {
       id: Event.target.value,
       like: parseInt(Event.target.name) + 1,
     };
-    axios.post("http://127.0.0.1:5500/updateLike", data);
+    axios.post("https://banaotechnologyprojectbackend.onrender.com/updateLike", data);
   }
 
   // function for handle logout button//
@@ -62,7 +62,7 @@ export function UserDashboard() {
   // for reload page//
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:5500/data")
+      .get("https://banaotechnologyprojectbackend.onrender.com/data")
       .then((res) => {
         setComData(res.data);
       })
