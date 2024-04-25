@@ -1,0 +1,36 @@
+
+#searchBox{
+    background-color:#f2f2f2;
+    width: 360px;
+    height: 42px;
+    border-radius: 21px;
+
+}
+#banner{
+    width: 100%;
+    background-image: url(../../../public/assest/image/banner.png);
+    height:400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position:relative;
+}
+.cart-body #artical::before{
+    content: "✍️";
+    margin-bottom: 1px;
+}
+.cart-body #artical::before{
+    content: "✍️";
+    margin-bottom: 1px;
+}
+.cart-body #education::before{
+    content: "🔬";
+    margin-bottom: 1px;
+}
+.cart-body #calendar::before{
+    content: "📅";
+    margin-bottom: 1px;
+}
+.cart-body #job::before{
+    content: "💼";
+    margin-bottom: 1px;
+}
